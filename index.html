@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find My Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body class="light">
+    <section class="weather__container">
+      <div class="logo">
+        <img src="./assets/weather.png" alt="weather" />
+      </div>
+      <div class="weather-loading">Loading Weather Temperature...</div>
+      <div class="weather" hidden>
+        <div class="weather__info">
+          <div class="weather__data">
+            <span class="temperature">__</span>
+            <span>°C</span>
+          </div>
+
+          <div class="toggle">
+            <input type="checkbox" id="check" />
+            <label class="slider" for="check"></label>
+          </div>
+        </div>
+        <div class="weather__city">
+          <span>Weather in: </span><span class="city__name">_______</span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
