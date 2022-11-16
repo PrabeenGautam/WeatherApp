@@ -22,7 +22,7 @@ if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
     async function (position) {
       weatherLoading.classList.contains("error") &&
-        weatherLoading.classList.add("error");
+        weatherLoading.classList.remove("error");
       try {
         const { coords } = position;
         const response = await fetch(
