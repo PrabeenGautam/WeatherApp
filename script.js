@@ -43,8 +43,8 @@ if (navigator.geolocation) {
       }
     },
     function () {
-      weather.innerHTML =
-        "<div class='weather-error'>Access to geolocation is not given! </div>";
+      weatherLoading.innerHTML =
+        "<div class='error'>Access to geolocation is not given! </div>";
     }
   );
 }
